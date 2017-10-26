@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>testowa apka</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="text-center">Witaj w grze
+        <span class="label label-default">Kamień</span>
+        <span class="label label-info">Papier</span>
+        <span class="label label-danger">Nożyce</span>
+      </h3>
+    </div>
+    <div id="js-newGameElement" class="container"> <!--nowa gra!!*/-->
+      <div class="row text-center">
+        <button id="js-newGameButton" class="btn btn-default">Nowa Gra</button>
+      </div>
+    </div>
+    <div>
+      <div id="js-playerPickElement" class="container"><!--pola wyboru!!!-->
+        <div class="row text-center">                  <!-- pola wyboru div!!!*/-->
+          <button id="js-playerPick_rock" class="btn"><!--wybór gracza - kamień  id="js-playerPick_rock"*/-->
+            <span class="badge">
+              <i class="fa fa-hand-rock-o" aria-hidden="true"></i>
+            </span> Kamień
+          </button>
+          <button id="js-playerPick_paper" class="btn"><!--wybór gracza - papier  id="js-playerPick_paper"*/-->
+            <span class="badge">
+              <i class="fa fa-hand-paper-o" aria-hidden="true"></i>
+            </span> Papier
+          </button>
+          <button id="js-playerPick_scissors" class="btn"><!--wybór gracza - nożyczki  id="js-playerPick_scissors"*/-->
+            <span class="badge">
+              <i class="fa fa-hand-scissors-o" aria-hidden="true"></i>
+            </span> Nożyce
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="js-resultsTableElement" class="container"> <!--Tabela wyników*/-->
+      <div class="row">
+        <div class="col-xl-5 text-center">
+          <span id="js-playerPoints" class="badge"> 0 </span><!-- punkty gracza  id="js-playerPoints"*/-->
+          <span id="js-playerName"> Imię gracza </span><!-- imię gracza   id="js-playerName"*/-->
+        </div>
+        <div class="col-xl-2 text-center"> VS. </div>
+        <div class="col-xl-5 text-center">
+          <span id="js-computerPoints" class="badge"> 0 </span>Komputer</div> </div>  <!--punkty komputera  id="js-computerPoints"*/-->
+        <div class="row">
+          <div class="col-xl-5 text-center">
+            <span id="js-playerPick"> Wybór gracza </span>
+          </div>
+          <div class="col-xl-2"></div>
+          <div class="col-xl-5 text-center">
+            <span id="js-computerPick"> Wybór komputera </span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-5 text-center">
+            <span id="js-playerResult"> Wynik gracza </span>
+          </div>
+          <div class="col-xl-2"></div>
+          <div class="col-xl-5 text-center">
+            <span id="js-computerResult"> Wynik komputera </span>
+          </div>
+        </div>
+      </div>
+    <script src="js/javaScript.js" type="text/javascript"></script>
+  </body>
+</html>

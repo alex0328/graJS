@@ -1,0 +1,17 @@
+.row.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-center {
+  padding: 20px;
+}
+
+.btn {
+  margin: 10px;
+}
+
+.badge {
+  color: #272727!important;
+}
